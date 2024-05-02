@@ -3,7 +3,7 @@ import chalk  from "chalk";
 await(console.log(chalk.bgBlueBright.bold("\n\t**********Welcome to Number Guess Game**********\t\n"))
 )
 let guessNumber = Math.floor(Math.random() *10);
-console.log(guessNumber);
+
 
 let userNumber = await inquirer.prompt([
     {
@@ -18,7 +18,6 @@ if(userNumber.userGuess === guessNumber){
 }else{
     console.log(chalk.bgRedBright.bold("\n\t**********Better Luck Next time....You lose**********\t\n"))
 }
-
 
 
 
